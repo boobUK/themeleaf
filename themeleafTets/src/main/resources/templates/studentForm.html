@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.themeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>Student info</title>
+</head>
+<body>
+	<form th:action="@{/saveStudent}" th:object="${student}" method="post">
+		Name: <input type="text" th:field="*{name}" /></br>
+		 Score: <input type="text" th:field="*{score}"  /> </br>
+		 <input type="submit" value="Save" /></br>
+		  <input type="reset" value="Reset" />
+	</form>
+</body>
+</html>
